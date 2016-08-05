@@ -1,4 +1,4 @@
-var React = require('react');
+
 
 class AlertButton extends React.Component {
   constructor(props) {
@@ -10,9 +10,19 @@ class AlertButton extends React.Component {
   }
   render() {
     return (
-      <button onClick={this.alertText}>我是一個 {this.props.text} 按鈕</button>
+      <button onClick={this.alertText}>NO. {this.props.num} 我是一個 {this.props.text} 按鈕</button>
     );
   }
 }
-
+/*
+  AlertButton.propTypes = {
+    text: React.PropTypes.string,
+    num:  React.PropTypes.num
+  };
+  
+  AlertButton.defaultProps = {
+    text : 'default text',
+    num: 0
+  };
+*/  
 module.exports = AlertButton;

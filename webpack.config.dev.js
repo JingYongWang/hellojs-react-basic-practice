@@ -47,8 +47,9 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.ProvidePlugin({
-      // React: 'react',
-      // ReactDOM:'react-dom'
+       //遇到React的變數,自動注入
+       React: 'react',
+       ReactDOM:'react-dom'
     })
   ]
 };
